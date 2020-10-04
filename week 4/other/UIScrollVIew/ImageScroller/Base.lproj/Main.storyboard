@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dMf-wh-djy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Axh-TU-BPl">
+            <objects>
+                <viewController id="dMf-wh-djy" customClass="ViewController" customModule="ImageScroller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="soN-2W-yNh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="rko-6l-ch3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zombies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4xh-hy-jO0">
+                                        <rect key="frame" x="0.0" y="0.0" width="2592" height="1936"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4xh-hy-jO0" firstAttribute="bottom" secondItem="GsA-TB-L3C" secondAttribute="bottom" id="9A0-mU-yOG"/>
+                                    <constraint firstItem="4xh-hy-jO0" firstAttribute="leading" secondItem="GsA-TB-L3C" secondAttribute="leading" id="IqZ-bY-OIL"/>
+                                    <constraint firstItem="4xh-hy-jO0" firstAttribute="top" secondItem="GsA-TB-L3C" secondAttribute="top" id="KcY-tq-sYy"/>
+                                    <constraint firstItem="4xh-hy-jO0" firstAttribute="trailing" secondItem="GsA-TB-L3C" secondAttribute="trailing" id="vJ0-Yl-bYR"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="GsA-TB-L3C"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="72l-Q7-HV6"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bbN-2t-Uxi"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="4xh-hy-jO0" id="dVf-mm-qar"/>
+                        <outlet property="scrollView" destination="rko-6l-ch3" id="9bc-Vx-6b8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6u-v6-NaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.28985507246378" y="87.053571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="zombies.jpg" width="2592" height="1936"/>
+    </resources>
+</document>
